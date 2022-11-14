@@ -49,7 +49,7 @@ public class WordpressBase {
 
     public void ServiceStop(){
     	
-    	//String[] command = { "adb uninstall io.appium.uiautomator2.server & adb uninstall io.appium.uiautomator2.server.test & Taskkill /IM node.exe /F" };
+    	String[] command = { "adb uninstall io.appium.uiautomator2.server & adb uninstall io.appium.uiautomator2.server.test & Taskkill /IM node.exe /F" };
 		try {
 			Runtime.getRuntime().exec(command);
 			System.out.println("Appium server stopped.");
